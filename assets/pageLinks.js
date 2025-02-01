@@ -23,3 +23,6 @@ function removeTranstion() {
     }, 2000); 
   }
   put_Live_home()
+  window.addEventListener("click", function() {
+    VideoTransition.paly();
+  });

@@ -40,4 +40,5 @@ window.addEventListener("click", function() {
   let video = document.getElementById("audio");
   video.muted = false; 
   video.play().catch(error => console.log("Play failed:", error));
+  VideoTransition.paly();
 });
