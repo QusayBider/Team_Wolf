@@ -54,7 +54,7 @@ gap :calc(100% / 4);
     font-size: 20px;
    
 }
-audio{
+.audio{
 display:none;
 }
 .sound{
@@ -68,9 +68,10 @@ display:none;
     justify-content: center;
     cursor: pointer;
     border: 0px;
-    position: fixed;
     top: calc(100% - 90px) !important;
     right: 20px;
+    position: fixed;
+    
     i{
         font-size: 23px;
     }
