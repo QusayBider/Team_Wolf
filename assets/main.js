@@ -4,7 +4,7 @@ let VideoTransition = document.getElementById("vedioTransition");
 let VideoHome = document.getElementById("videoHome");
 const mut_button = document.getElementById("mute-but");
 var sound_state=true
- audio.volume = 0.09;
+ audio.volume = 0.05;
 
  mut_button.addEventListener( "click",() =>{
    if (sound_state) {
@@ -14,7 +14,7 @@ var sound_state=true
    }
    else {
     sound_state=true;
-    audio.volume = 0.09;
+    audio.volume = 0.05;
     
     mut_button.innerHTML = '<i class="fa-solid fa-volume-up fa-2xl"></i>';
    }

@@ -11,7 +11,7 @@ body {
     background-size: 80%;
     */
     background-color: hwb(200 40% 35%);
-    
+    height: 500px !important;
     
 }
 
@@ -124,10 +124,18 @@ display:none;
 
 
 }
+video{
+    margin-top: 10px;
+}
 .hiddenFromScreen{
     display: none;
 }
 .Live{
     padding-top:10px ;
 
+}
+@media screen and (max-width:992px) {
+    video{
+        margin-top: 100px;
+    }
 }
