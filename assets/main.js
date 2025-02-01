@@ -35,11 +35,9 @@ function put_video_home() {
 }
 put_video_home()
 
-document.addEventListener("DOMContentLoaded", function () {
-  let audio = document.getElementById("audio");
-  audio.play().catch(error => {
-      console.log("Autoplay prevented:", error);
-  });
+audio.muted = false; 
+window.addEventListener("click", function() {
+  let video = document.getElementById("audio");
+  video.muted = false; 
+  video.play().catch(error => console.log("Play failed:", error));
 });
-
-
