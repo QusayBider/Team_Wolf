@@ -21,15 +21,18 @@ var sound_state=true
  });
 
  function removeTranstion() {
- 
+  
   interval = setInterval(() => {
       VideoTransition.classList.add("hidden");
+      
   }, 2000); 
 }
+
 removeTranstion()
 function put_video_home() {
  
   interval = setInterval(() => {
+    
     VideoHome.classList.remove("hidden");
   }, 2000); 
 }
@@ -40,5 +43,6 @@ window.addEventListener("click", function() {
   let video = document.getElementById("audio");
   video.muted = false; 
   video.play().catch(error => console.log("Play failed:", error));
-  VideoTransition.paly();
+  
 });
+
