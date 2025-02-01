@@ -9,12 +9,12 @@ var sound_state=true
  mut_button.addEventListener( "click",() =>{
    if (sound_state) {
     sound_state=false;
-    audio.volume = 0.0;
+    audio.volume=0; 
     mut_button.innerHTML = '<i class="fa-solid fa-volume-xmark fa-2xl"></i>';
    }
    else {
     sound_state=true;
-    audio.volume = 0.05;
+    audio.volume=0.05; 
     
     mut_button.innerHTML = '<i class="fa-solid fa-volume-up fa-2xl"></i>';
    }
@@ -42,7 +42,5 @@ audio.muted = false;
 window.addEventListener("click", function() {
   let video = document.getElementById("audio");
   video.muted = false; 
-  video.play().catch(error => console.log("Play failed:", error));
-  
 });
 
