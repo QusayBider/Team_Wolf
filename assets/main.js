@@ -42,5 +42,5 @@ audio.muted = false;
 window.addEventListener("click", function() {
   let video = document.getElementById("audio");
   video.muted = false; 
+  video.play(); 
 });
-
